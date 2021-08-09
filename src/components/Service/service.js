@@ -1,56 +1,67 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
 
 //Import Section Title
 import SectionTitle from "../common/section-title";
-import ServiceBox from "./services-box";
+
+//Import Images
+import service from "../../assets/images/service.jpg";
 
 class Process extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            services : [
-                { icon : "grid", title : "Bootstrap UI based", desc : "To an English person, it will seem like English as skeptical." },
-                { icon : "edit", title : "Easy to customize", desc : "If several languages coalesce, the grammar of the language." },
-                { icon : "headphones", title : "Awesome Support", desc : "The languages only differ in their grammar their pronunciation" },
-                { icon : "layers", title : "Creative Design", desc : "Everyone realizes why a new common would be desirable." },
-                { icon : "code", title : "Quality Code", desc : "To achieve this, it would be necessary to have uniform." },
-                { icon : "tablet", title : "Responsive layout", desc : "Their separate existence is a myth. For science, music, etc." },
-            ]
-        }
-    }
-    
-    render() {
-        return (
-            <React.Fragment>
+  render() {
+    return (
+      <React.Fragment>
         <section className="section bg-light" id="services">
-            <Container>
+          <Container>
             <SectionTitle
-                subtitle="Services"
-                title="Services We Provide"
-                desc="It will be as simple as occidental in fact, it will be Occidental."
+              subtitle="How we do it"
+              title="We use data-driven creativity to solve business problems"
             />
-
-                <Row>
-                    <ServiceBox services={this.state.services} />
-                </Row>
-                
-
-                <Row className="mt-4">
-                    <Col lg={12}>
-                        <div className="text-center">
-                            <Link to="#" className="btn btn-success">View more</Link>
-                        </div>
-                    </Col>
-                </Row>
-                
-            </Container>
-            
+            <Row
+              className="mt-4"
+              style={{
+                position: "relative",
+                display: "flex",
+                alignItems: "flex-end",
+                justifyContent: "center",
+              }}
+            >
+              <Col lg={12}>
+                <img
+                  src={service}
+                  alt="service"
+                  className="img-fluid mx-auto d-block"
+                />
+              </Col>
+              <Row
+                style={{
+                  backgroundColor: "#fff",
+                  position: "absolute",
+                  zIndex: "100",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flex: 1,
+                  width: "70%",
+                  height: "40%",
+                }}
+              >
+                <h4>
+                  By harnessing powerful insights and smart targeting, we're
+                  able to create behaviour-changing ideas and experiences that
+                  deliver value to brands. Supported by our proprietary{" "}
+                  <u>Creative Intelligence process</u>, <u>unique tools</u> and{" "}
+                  <u>global partners</u>, we are able to put data at the heart
+                  of everything we do to orchestrate experiences that deliver
+                  creativity with precision and purpose
+                </h4>
+              </Row>
+            </Row>
+          </Container>
         </section>
-            </React.Fragment>
-        );
-    }
+      </React.Fragment>
+    );
+  }
 }
 
 export default Process;

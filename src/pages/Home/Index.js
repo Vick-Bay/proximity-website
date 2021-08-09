@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
-import NavbarPage from "../../components/Navbar/Navbar_Page";
+//Import fonts
+import "../../assets/fonts/Avenir-Black.ttf";
+import "../../assets/fonts/Avenir-Book.ttf";
+
+import NavbarPage from "../../components/Navbar/navbar-page";
 import Section from "./section";
 import Service from "../../components/Service/service";
 import Features from "../../components/Features/feature";
-import Clients from "../../components/Client/client";
-import Pricing from "../../components/Pricing/pricing";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Footer from "../../components/Footer/footer";
 import FooterShape from "../../components/Footer/footer-shape";
@@ -18,8 +20,8 @@ class Index1 extends Component {
         { id: 1, idnm: "home", navheading: "About" },
         { id: 2, idnm: "services", navheading: "Work" },
         { id: 3, idnm: "features", navheading: "Latest" },
-        { id: 4, idnm: "clients", navheading: "People & Careers" },
-        { id: 6, idnm: "pricing", navheading: "Contact" },
+        { id: 4, idnm: "features", navheading: "People & Careers" },
+        { id: 6, idnm: "features", navheading: "Contact" },
       ],
       pos: document.documentElement.scrollTop,
       imglight: false,
@@ -63,13 +65,7 @@ class Index1 extends Component {
         {/* Importing Features */}
         <Features />
 
-        {/* Importing Clients */}
-        <Clients />
-
-        {/* Importing Pricing */}
-        <Pricing />
-
-        {/* Importing Sunscribe */}
+        {/* Importing Subscribe */}
         <Subscribe />
 
         {/* Importing Footer */}

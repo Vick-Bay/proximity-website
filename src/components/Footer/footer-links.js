@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 //Import Images
-import logolight from "../../assets/images/logo-dark.png";
+import logo from "../../assets/images/proximity-logo.png";
 
 class FooterLinks extends Component {
   render() {
@@ -15,13 +15,15 @@ class FooterLinks extends Component {
               <Col lg={12}>
                 <div className="float-sm-left">
                   <Link to="#">
-                    <img src={logolight} alt="" height="20" />
+                    <img src={logo} alt="" height="20" />
                   </Link>
+                  <span style={{ color: "black" }}>
+                    <strong>proximity</strong>
+                  </span>
                 </div>
                 <div className="float-sm-right mt-4 mt-sm-0">
                   <p className="copyright-desc text-white mb-0">
-                    {new Date().getFullYear()} © Proximity. Created by Vickram
-                    Bayragee
+                    2018 © Proximity. Created by Vickram Bayragee
                   </p>
                 </div>
               </Col>

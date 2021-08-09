@@ -1,0 +1,15 @@
+/* File: font.css */
+@font-face {
+  font-family: "Avenir-Black";
+  src: local("Avenir-Black"), url("./fonts/Avenir-Black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: local("Avenir-Book"), url("./fonts/Avenir-Book.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: local("Avenir-Medium"), url("./fonts/Avenir-Medium.ttf") format("ttf");
+}

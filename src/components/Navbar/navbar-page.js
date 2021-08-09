@@ -41,7 +41,8 @@ class NavbarPage extends Component {
         <Navbar
           expand="lg"
           fixed="top"
-          className={"sticky sticky-dark " + this.props.navClass}
+          className={"sticky sticky-dark p-0 " + this.props.navClass}
+          style={{ width: "100vw" }}
         >
           <Container>
             <NavbarBrand className="logo" href="/">
@@ -79,29 +80,51 @@ class NavbarPage extends Component {
                       key={key}
                       className={item.navheading === "Home" ? "active" : ""}
                     >
-                      <NavLink href={"#" + item.idnm}>
+                      <NavLink
+                        href={"#" + item.idnm}
+                        style={{ color: "white" }}
+                      >
                         {" "}
                         {item.navheading}
                       </NavLink>
                     </NavItem>
                   ))}
                 </Nav>
-                <ButtonToolbar>
-                  <ButtonGroup size="sm">
-                    <Button
-                      className="btn btn-outline-white"
-                      style={{ backgroundColor: "transparent" }}
-                    >
-                      EN
-                    </Button>
-                    <Button
-                      className="btn btn-outline-white"
-                      style={{ backgroundColor: "transparent" }}
-                    >
-                      FR
-                    </Button>
-                  </ButtonGroup>
-                </ButtonToolbar>
+                {this.props.imglight === true ? (
+                  <ButtonToolbar>
+                    <ButtonGroup size="sm">
+                      <Button
+                        className="btn btn-outline-dark"
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        EN
+                      </Button>
+                      <Button
+                        className="btn btn-outline-dark"
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        FR
+                      </Button>
+                    </ButtonGroup>
+                  </ButtonToolbar>
+                ) : (
+                  <ButtonToolbar>
+                    <ButtonGroup size="sm">
+                      <Button
+                        className="btn btn-outline-white"
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        EN
+                      </Button>
+                      <Button
+                        className="btn btn-outline-white"
+                        style={{ backgroundColor: "transparent" }}
+                      >
+                        FR
+                      </Button>
+                    </ButtonGroup>
+                  </ButtonToolbar>
+                )}
               </ScrollspyNav>
             </Collapse>
           </Container>

@@ -1,18 +1,30 @@
+@font-face {
+  font-family: "AvenirBlack";
+  src: local("AvenirBlack"), url("../fonts/Avenir-Black.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: "AvenirBook";
+  src: local("AvenirBook"), url("../fonts/Avenir-Book.ttf") format("truetype");
+}
 
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap');
+@font-face {
+  font-family: "AvenirMedium";
+  src: local("AvenirMedium"),
+    url("../fonts/Avenir-Medium.ttf") format("truetype");
+}
 
-$primary:   #2f55d4;
-$success:   #34D1BF;
-$info:      #57B8FF;
-$warning:   #FBB13C;
-$danger:    #FE6847;
-$purple:    #9261c6;
-$pink:      #ff7aa3;
-$white:     #ffffff;
-$dark:      #343a40;
-$light:     #f8fafe;
-$muted:     #a0a9b1;
+$primary: #2f55d4;
+$success: #34d1bf;
+$info: #57b8ff;
+$warning: #fbb13c;
+$danger: #fe6847;
+$purple: #9261c6;
+$pink: #ff7aa3;
+$white: #ffffff;
+$dark: #343a40;
+$light: #f8fafe;
+$muted: #a0a9b1;
 
 // stylelint-disable
 $gray-100: #f8f9fa;
@@ -26,32 +38,31 @@ $gray-800: #343a40;
 $gray-900: #212529;
 
 $colors: (
-    "primary": $primary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "dark": $dark,
-    "muted": $muted,
-    "purple": $purple,
-    "pink": $pink,
-    "white": $white,
-    "light": $light
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "dark": $dark,
+  "muted": $muted,
+  "purple": $purple,
+  "pink": $pink,
+  "white": $white,
+  "light": $light,
 );
 
-$body-color:  #a0a9b1;
+$body-color: #a0a9b1;
 
-$footer-bg:   #0f1b42;
+$footer-bg: #0f1b42;
 
-$font-size-base : .9rem;
+$font-size-base: 0.9rem;
 
-$box-shadow:   0px 8px 35px 0px  rgba($gray-700, .05);
+$box-shadow: 0px 8px 35px 0px rgba($gray-700, 0.05);
 
-
-$font-family-primary: 'Rubik', sans-serif;
+$font-family-primary: "Avenir-Black";
 
 // Secondary font
-$font-family-secondary: 'Rubik', sans-serif;
+$font-family-secondary: "Avenir-Book";
 
 $font-weight-medium: 500;
 $font-weight-semibold: 600;

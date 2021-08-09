@@ -25,7 +25,7 @@ body {
   font-size: $font-size-base;
   color: $body-color;
   //font-family: $font-family-primary;
-  font-family: "Montserrat", sans-serif;
+  font-family: "AvenirBlack";
 }
 
 h1,
@@ -93,6 +93,8 @@ p {
 .small-title {
   letter-spacing: 1px;
   font-size: 14px;
+  font-weight: bold;
+  color: $danger !important;
 }
 
 .btn {
@@ -256,12 +258,12 @@ p {
         margin: 0 7px;
         &:hover,
         &:active {
-          color: $primary;
+          color: $white;
         }
       }
       &.active {
         .nav-link {
-          color: $primary;
+          color: $white;
         }
       }
     }
@@ -353,12 +355,12 @@ p {
           color: rgba($dark, 0.9);
           &:hover,
           &:active {
-            color: $primary;
+            color: $white;
           }
         }
         &.active {
           .nav-link {
-            color: $primary;
+            color: $white;
           }
         }
       }
@@ -731,18 +733,7 @@ p {
   height: auto;
   top: 0rem;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #005031 !important;
-  font-weight: 500;
-}
-p {
-  color: #001e14 !important ;
-}
+
 .bg-primary {
   background-image: linear-gradient(
     to right,

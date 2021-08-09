@@ -13,19 +13,10 @@
     "react": "^16.13.1",
     "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
-    "react-fade-in": "^1.0.0",
-    "react-image-lightbox": "^5.1.1",
-    "react-modal-video": "^1.2.3",
-    "react-owl-carousel": "^2.3.3",
-    "react-parallax": "^3.0.3",
-    "react-particles-js": "^3.2.1",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "react-slick": "^0.26.1",
     "react-sticky-header": "^0.2.0",
-    "react-text-rotator": "^0.1.1",
-    "react-youtube": "^7.11.2",
     "reactstrap": "^8.4.1"
   },
   "scripts": {
@@ -41,14 +32,16 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
+      "not ie 11",
       "not dead",
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
     ]
   },
   "devDependencies": {
