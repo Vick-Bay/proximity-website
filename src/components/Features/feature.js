@@ -4,7 +4,6 @@ import { Container, Row, Col, Card, CardBody, CardHeader } from "reactstrap";
 
 //Import Section Title
 import SectionTitle from "../common/section-title";
-import FeatureBox from "./feature-box";
 
 //Import Images
 import feature1 from "../../assets/images/features/img-1.png";
