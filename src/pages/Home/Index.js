@@ -10,7 +10,6 @@ import Service from "../../components/Service/service";
 import Features from "../../components/Features/feature";
 import Subscribe from "../../components/Subscribe/Subscribe";
 import Footer from "../../components/Footer/footer";
-import FooterShape from "../../components/Footer/footer-shape";
 
 class Index1 extends Component {
   constructor(props) {
@@ -65,11 +64,7 @@ class Index1 extends Component {
         {/* Importing Features */}
         <Features />
 
-        {/* Importing Subscribe */}
-        <Subscribe />
-
         {/* Importing Footer */}
-        <FooterShape />
 
         <Footer />
       </React.Fragment>

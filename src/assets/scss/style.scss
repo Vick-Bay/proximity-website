@@ -96,6 +96,12 @@ p {
   color: $danger !important;
 }
 
+.subtitle {
+  font-family: "Avenir-Book";
+  font-size: 40px;
+  color: $dark !important;
+}
+
 .btn {
   font-size: 0.9rem;
   padding: 0.7rem 1.4rem;
@@ -675,17 +681,8 @@ p {
 *******************/
 
 .footer {
-  background-image: linear-gradient(
-    to right,
-    rgba(30, 193, 60, 0.95),
-    rgba(35, 161, 58, 0.95),
-    rgba(31, 142, 11, 0.9),
-    rgba(24, 103, 102, 95%),
-    rgba(24, 103, 102, 95%)
-  );
-  color: rgba($white, 0.5);
-  padding-top: 80px;
-  padding-bottom: 40px;
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #f67062 30%, #fc5296 90%);
 }
 
 .footer-list-title {

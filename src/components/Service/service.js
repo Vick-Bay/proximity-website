@@ -11,7 +11,7 @@ class Process extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section bg-light" id="services">
+        <section className="section bg-white" id="services">
           <Container>
             <SectionTitle
               subtitle="How we do it"
@@ -43,10 +43,19 @@ class Process extends Component {
                   justifyContent: "center",
                   flex: 1,
                   width: "70%",
-                  height: "40%",
+                  height: "30%",
                 }}
               >
-                <h4>
+                <p
+                  className="p-5"
+                  style={{
+                    fontFamily: "Avenir-Book",
+                    fontSize: "25px",
+                    color: "black",
+                    textAlign: "center",
+                    lineHeight: "1.3",
+                  }}
+                >
                   By harnessing powerful insights and smart targeting, we're
                   able to create behaviour-changing ideas and experiences that
                   deliver value to brands. Supported by our proprietary{" "}
@@ -54,7 +63,7 @@ class Process extends Component {
                   <u>global partners</u>, we are able to put data at the heart
                   of everything we do to orchestrate experiences that deliver
                   creativity with precision and purpose
-                </h4>
+                </p>
               </Row>
             </Row>
           </Container>

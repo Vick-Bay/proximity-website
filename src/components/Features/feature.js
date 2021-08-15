@@ -6,6 +6,7 @@ import { Container, Row, Col, Card, CardBody, CardHeader } from "reactstrap";
 import SectionTitle from "../common/section-title";
 
 //Import Images
+import pencil from "../../assets/images/pencil-bw-clipart.png";
 import feature1 from "../../assets/images/features/img-1.png";
 
 class Features extends Component {
@@ -13,15 +14,24 @@ class Features extends Component {
     return (
       <React.Fragment>
         <section className="section" id="features">
-          <Container>
+          <Container className="pt-5">
+            <img
+              src={pencil}
+              alt="pencil"
+              className="img-fluid mx-auto d-block"
+              style={{ width: "150px", height: "auto" }}
+            />
             <SectionTitle subtitle="Business problems we've solved" />
-            <Row justify-content-center>
-              <Col lg={5} sm={8}>
-                <Card className="border border-light shadow-none mt-5 mt-lg-0">
-                  <CardHeader className="border-0 bg-transparent"></CardHeader>
-                  <CardBody className="bg-light">
+            <Row
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Col lg={6} sm={12} className="p-0">
+                <Card className=" shadow-none mt-5 mt-lg-0 p-0">
+                  <CardBody>
                     <div
-                      className="box-shadow"
                       style={{
                         position: "relative",
                         display: "flex",
@@ -37,11 +47,17 @@ class Features extends Component {
                       <div
                         style={{
                           position: "absolute",
+                          width: "300px",
+                          left: "30px",
                         }}
                       >
                         <h4
                           style={{
                             color: "white",
+                            fontFamily: "Avenir-Book",
+                            fontSize: "25px",
+                            textAlign: "left",
+                            lineHeight: "1.3",
                           }}
                         >
                           Can a love story double as a hearing test
@@ -49,7 +65,9 @@ class Features extends Component {
                         <p
                           style={{
                             float: "left",
+                            fontFamily: "Avenir-Book",
                             display: "inline-block",
+                            textDecoration: "underline",
                           }}
                         >
                           <Link
@@ -66,12 +84,10 @@ class Features extends Component {
                   </CardBody>
                 </Card>
               </Col>
-              <Col lg={5} sm={8}>
-                <Card className="border border-light shadow-none mt-5 mt-lg-0">
-                  <CardHeader className="border-0 bg-transparent"></CardHeader>
-                  <CardBody className="bg-light">
+              <Col lg={6} sm={12} className="p-0">
+                <Card className=" shadow-none mt-5 mt-lg-0 p-0">
+                  <CardBody>
                     <div
-                      className="box-shadow"
                       style={{
                         position: "relative",
                         display: "flex",
@@ -87,19 +103,27 @@ class Features extends Component {
                       <div
                         style={{
                           position: "absolute",
+                          width: "300px",
+                          left: "30px",
                         }}
                       >
                         <h4
                           style={{
                             color: "white",
+                            fontFamily: "Avenir-Book",
+                            fontSize: "25px",
+                            textAlign: "left",
+                            lineHeight: "1.3",
                           }}
                         >
-                          How close to an AFL player can you get
+                          How close to an AFL player can you get?
                         </h4>
                         <p
                           style={{
                             float: "left",
+                            fontFamily: "Avenir-Book",
                             display: "inline-block",
+                            textDecoration: "underline",
                           }}
                         >
                           <Link
@@ -116,6 +140,58 @@ class Features extends Component {
                   </CardBody>
                 </Card>
               </Col>
+            </Row>
+            <Row
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <p
+                style={{
+                  float: "center",
+                  fontFamily: "Avenir-Book",
+                  display: "inline-block",
+                  textDecoration: "underline",
+                }}
+              >
+                <Link
+                  to="#"
+                  style={{
+                    color: "black",
+                  }}
+                >
+                  View our work
+                </Link>
+              </p>
+            </Row>
+            <Row
+              style={{
+                display: "flex",
+                width: "100%",
+                flexWrap: "wrap",
+                justifyContent: "flex-end",
+              }}
+            >
+              <p
+                style={{
+                  float: "center",
+                  fontFamily: "Avenir-Book",
+                  display: "inline-block",
+                }}
+              >
+                <Link
+                  to="#"
+                  style={{
+                    color: "black",
+                  }}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                  }
+                >
+                  <span>&#8593;</span> Return to top
+                </Link>
+              </p>
             </Row>
           </Container>
         </section>
