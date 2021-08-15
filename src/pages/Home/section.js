@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player/lazy";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
 
 //Import Videos and Video Image
@@ -17,7 +17,7 @@ class Section extends Component {
             className="px-0 overflow-hidden"
             style={{ position: "absolute" }}
           >
-            <Row style={{ display: "flex" }}>
+            <Row className="hero-row">
               <ReactPlayer
                 url={video}
                 playing
@@ -28,37 +28,23 @@ class Section extends Component {
                 fallback={videoImg}
                 style={{ position: "relative" }}
               />
-              <p
-                style={{
-                  position: "absolute",
-                  zIndex: "100",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flex: 1,
-                  width: "100%",
-                  height: "100%",
-                  fontSize: "2rem",
-                  fontWeight: "bold",
-                  color: "#ffffff",
-                }}
-              >
-                We make people more valuable to brands
-              </p>
-              <i
-                style={{
-                  display: "flex",
-                  alignItems: "flex-end",
-                  justifyContent: "center",
-                  position: "absolute",
-                  zIndex: "100",
-                  width: "100%",
-                  height: "80%",
-                  color: "#ffffff",
-                }}
-              >
-                <FeatherIcon icon="arrow-down" className=" icons-md" />
-              </i>
+              <Col className="hero-div col-md-6">
+                <p>We make people more valuable to brands</p>
+                <i
+                  style={{
+                    display: "flex",
+                    alignItems: "flex-end",
+                    justifyContent: "center",
+                    position: "absolute",
+                    zIndex: "100",
+                    width: "100%",
+                    height: "60%",
+                    color: "#ffffff",
+                  }}
+                >
+                  <FeatherIcon icon="arrow-down" className=" icons-md" />
+                </i>
+              </Col>
             </Row>
           </Container>
         </section>

@@ -24,8 +24,7 @@ File: Main scss file
 body {
   font-size: $font-size-base;
   color: $body-color;
-  //font-family: $font-family-primary;
-  font-family: "Avenir-Black";
+  font-family: $font-family-secondary;
 }
 
 h1,
@@ -256,7 +255,7 @@ p {
         background-color: transparent !important;
         padding: 6px 10px;
         margin: 0 7px;
-        font-family: "Avenir-Medium";
+        font-family: $font-family-primary;
         &:hover,
         &:active {
           color: $white;
@@ -335,6 +334,51 @@ p {
   }
 }
 
+@media (min-width: 320px) and (max-width: 992px) {
+  .nav-sticky {
+    &.navbar-light {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: black !important;
+            font-family: $font-family-primary;
+            font-weight: 300;
+            background-color: $white;
+            &:hover,
+            &:active {
+              color: black !important;
+            }
+          }
+          &.active {
+            .nav-link {
+              color: black !important;
+            }
+          }
+        }
+      }
+      .logo {
+        .logo-light {
+          display: inline-block;
+        }
+        .logo-dark {
+          display: inline-block;
+        }
+      }
+
+      .nav-sticky {
+        .logo {
+          .logo-dark {
+            display: inline-block;
+          }
+          .logo-light {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
 /*--- navbar sticky ---*/
 
 .nav-sticky {
@@ -379,6 +423,41 @@ p {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+}
+
+.hero-section .hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.hero-section .hero-row .hero-div {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 90%;
+  height: 90%;
+  p {
+    font-size: 4rem;
+    font-family: Avenir-Black;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .hero-section {
+    height: 35vh;
+  }
+  .hero-section .hero-row .hero-div {
+    p {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .home-img {
@@ -761,4 +840,49 @@ p {
   background: #015435;
   border-color: #fbfbfb;
   box-shadow: 0 8px 14px rgba(248, 252, 4, 0.356);
+}
+
+/*
+Extra small devices (portrait phones, less than 544px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+h1 {
+  font-size: 1rem;
+} /*1rem = 16px*/
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  h1 {
+    font-size: 1.5rem;
+  } /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  } /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  } /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  } /*1rem = 16px*/
 }
