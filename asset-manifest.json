@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.2d43de5b.chunk.css",
-    "main.js": "./static/js/main.65f4043a.chunk.js",
-    "main.js.map": "./static/js/main.65f4043a.chunk.js.map",
+    "main.css": "./static/css/main.20b0583d.chunk.css",
+    "main.js": "./static/js/main.2d1fc271.chunk.js",
+    "main.js.map": "./static/js/main.2d1fc271.chunk.js.map",
     "reactPlayerDailyMotion.js": "./static/js/reactPlayerDailyMotion.62c8b3ad.chunk.js",
     "reactPlayerDailyMotion.js.map": "./static/js/reactPlayerDailyMotion.62c8b3ad.chunk.js.map",
     "reactPlayerFacebook.js": "./static/js/reactPlayerFacebook.f53faa6a.chunk.js",
@@ -31,15 +31,16 @@
     "reactPlayerYouTube.js.map": "./static/js/reactPlayerYouTube.3f3abbff.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.9c2e520c.js",
     "runtime-main.js.map": "./static/js/runtime-main.9c2e520c.js.map",
-    "static/js/15.5ea43860.chunk.js": "./static/js/15.5ea43860.chunk.js",
-    "static/js/15.5ea43860.chunk.js.map": "./static/js/15.5ea43860.chunk.js.map",
+    "static/js/15.3824a384.chunk.js": "./static/js/15.3824a384.chunk.js",
+    "static/js/15.3824a384.chunk.js.map": "./static/js/15.3824a384.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.fc28ce7077b86a9c6eb540e0ede5c19b.js": "./precache-manifest.fc28ce7077b86a9c6eb540e0ede5c19b.js",
+    "precache-manifest.76220c15f4f71c6f844e011eade628df.js": "./precache-manifest.76220c15f4f71c6f844e011eade628df.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.2d43de5b.chunk.css.map": "./static/css/main.2d43de5b.chunk.css.map",
-    "static/js/15.5ea43860.chunk.js.LICENSE.txt": "./static/js/15.5ea43860.chunk.js.LICENSE.txt",
+    "static/css/main.20b0583d.chunk.css.map": "./static/css/main.20b0583d.chunk.css.map",
+    "static/js/15.3824a384.chunk.js.LICENSE.txt": "./static/js/15.3824a384.chunk.js.LICENSE.txt",
     "static/media/theme.scss": "./static/media/Avenir-Medium.aed8836f.ttf",
     "static/media/materialdesignicons.min.css": "./static/media/materialdesignicons-webfont.a32fa1f2.eot",
+    "static/media/pencil-bw-clipart.png": "./static/media/pencil-bw-clipart.b150a864.png",
     "static/media/proximity-logo.png": "./static/media/proximity-logo.7f8857be.png",
     "static/media/service.jpg": "./static/media/service.68a44813.jpg",
     "static/media/video-poster.jpg": "./static/media/video-poster.a4f196ec.jpg",
@@ -47,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c2e520c.js",
-    "static/js/15.5ea43860.chunk.js",
-    "static/css/main.2d43de5b.chunk.css",
-    "static/js/main.65f4043a.chunk.js"
+    "static/js/15.3824a384.chunk.js",
+    "static/css/main.20b0583d.chunk.css",
+    "static/js/main.2d1fc271.chunk.js"
   ]
 }
