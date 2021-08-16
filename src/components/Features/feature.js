@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Card, CardBody, CardHeader } from "reactstrap";
+import { Container, Row, Col, Card, CardBody } from "reactstrap";
 
 //Import Section Title
 import SectionTitle from "../common/section-title";

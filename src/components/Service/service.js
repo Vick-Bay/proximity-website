@@ -18,7 +18,7 @@ class Process extends Component {
               title="We use data-driven creativity to solve business problems"
             />
             <Row
-              className="mt-4"
+              className="mt-4 pb-5"
               style={{
                 position: "relative",
                 display: "flex",
@@ -46,16 +46,7 @@ class Process extends Component {
                   height: "30%",
                 }}
               >
-                <p
-                  className="p-5"
-                  style={{
-                    fontFamily: "Avenir-Book",
-                    fontSize: "25px",
-                    color: "black",
-                    textAlign: "center",
-                    lineHeight: "1.3",
-                  }}
-                >
+                <p className="service-para">
                   By harnessing powerful insights and smart targeting, we're
                   able to create behaviour-changing ideas and experiences that
                   deliver value to brands. Supported by our proprietary{" "}

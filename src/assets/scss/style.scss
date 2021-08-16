@@ -65,6 +65,14 @@ p {
   padding-bottom: 80px;
 }
 
+@media (min-width: 320px) and (max-width: 992px) {
+  .section {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .vertical-content {
   display: -webkit-flex;
   display: -moz-flex;
@@ -100,6 +108,12 @@ p {
   font-family: "Avenir-Book";
   font-size: 40px;
   color: $dark !important;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 
 .btn {
@@ -139,7 +153,17 @@ p {
   // Icons
   .icon-dual-#{$name} {
     color: $value;
-    fill: rgba($value, 0.2);
+  }
+
+  .social-icon {
+    background: $white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 5px;
   }
 
   .btn-#{$name} {
@@ -455,7 +479,7 @@ p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 992px) {
+@media (min-width: 320px) and (max-width: 1100px) {
   .hero-section {
     height: 35vh;
   }
@@ -555,6 +579,22 @@ p {
 .play-iconbar {
   color: $white;
   font-size: 17px;
+}
+
+.service-para {
+  font-family: "Avenir-Book";
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  line-height: 1.3;
+  padding: 60px;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .service-para {
+    font-size: 13px;
+    padding: 10px;
+  }
 }
 
 /******************
@@ -682,7 +722,7 @@ p {
 
 .footer {
   background-color: #fc5296;
-  background-image: linear-gradient(315deg, #f67062 30%, #fc5296 90%);
+  background-image: linear-gradient(315deg, #ffa500 5%, #fc5296 80%);
 }
 
 .footer-list-title {
@@ -837,49 +877,4 @@ p {
   background: #015435;
   border-color: #fbfbfb;
   box-shadow: 0 8px 14px rgba(248, 252, 4, 0.356);
-}
-
-/*
-Extra small devices (portrait phones, less than 544px)
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-h1 {
-  font-size: 1rem;
-} /*1rem = 16px*/
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
-  h1 {
-    font-size: 1.5rem;
-  } /*1rem = 16px*/
-}
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  } /*1rem = 16px*/
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-  } /*1rem = 16px*/
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 3rem;
-  } /*1rem = 16px*/
 }
