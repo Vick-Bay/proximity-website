@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Media } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
 class Footer extends Component {
   state = {
