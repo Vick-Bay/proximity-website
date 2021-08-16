@@ -62,14 +62,14 @@ p {
 .section {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 320px) and (max-width: 992px) {
   .section {
     position: relative;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 }
 

@@ -14,7 +14,7 @@ class Features extends Component {
     return (
       <React.Fragment>
         <section className="section" id="features">
-          <Container className="pt-5">
+          <Container>
             <img
               src={pencil}
               alt="pencil"
